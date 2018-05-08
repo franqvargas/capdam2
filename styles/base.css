@@ -262,3 +262,16 @@ footer .tituloFooter{
     width: 100%;
     position: relative;
 }
+
+.socialContent{
+    height: 813px;
+    
+}
+
+.contenido{
+    height: 1088px;
+    width: 940px;
+    border: solid 2px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
