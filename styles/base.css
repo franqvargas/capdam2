@@ -1,0 +1,264 @@
+@font-face{
+    font-family: "Montserrat";
+    src: local("?"), url("../fonts/Montserrat-Medium.otf");
+}
+@font-face{
+    font-family: "Montserrat";
+    src: local("?"), url("../fonts/Montserrat-Regular.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+
+header #up-header{
+    display: flex;
+    background: #131c4e;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 40px;
+}
+
+header #social{
+    display: flex;
+    align-items: center;
+    width: 133px;
+    justify-content: space-between;
+}
+
+header #linea{
+    font-family: "Montserrat", medium;
+    font-size: 16px;
+    background: #6cc049;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 10px;
+}
+
+header #transparencia{
+    font-family: "Montserrat", medium;
+    font-size: 12px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#menu1{
+    overflow: hidden;
+    font-family: "Montserrat", medium;
+    font-size: 16px;
+    background-color: white;
+    
+}
+nav #menu #logo{
+    width: 150px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 90px;
+  }
+
+nav #menu{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 72px;
+    
+}
+
+#menu1 a{
+    display: block;
+}
+
+nav #menu li{
+    list-style: none;
+}
+
+nav #menu li#pago-en-linea{
+    background: #6cc049;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+
+
+#slider{
+    position: static;
+    height: 485px;
+    width: 100%;
+}
+
+.slide img{
+    width: 100%;
+    vertical-align: middle;
+    height: 485px;
+}
+
+.slide{
+    position: relative;
+    display: block;
+}
+
+.slider-controls{
+    position: absolute;
+    bottom: 0;
+    width: 75px;
+    top: 0;
+    margin: auto 16px;
+    cursor: pointer;
+}
+
+.slider-controls#next{
+    right: 0;
+}
+
+.slider-controls#back{
+    left: 0;
+}
+
+.slide-background{
+    background: #4343ab;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+.servicios{
+    position: static;
+    height: 275px;
+    width: 100%;
+}
+
+.servicio{
+    font-family: "Montserrat", medium;
+    font-size: 32px;  
+    color: #fff;
+    text-align: center;
+    display: block;  
+}
+
+.servicios #tramites{
+    background-color:#6cc049;
+    width: 33%;
+    height: 100%;
+    float: left; 
+       
+
+}
+.servicios #pagoLinea{
+    background-color:#44832a;
+    width: 33%;
+    height: 100%;
+    display: inline-block;   
+}   
+.servicios #fugasReportes{
+    background-color:#3fbfad;
+    width: 34%;
+    height: 100%;
+    float: right; 
+   
+}
+.servicios #tramites img{
+    width: 100px;
+    height: 100px;
+    padding-top: 35px;
+    margin-left: 170px;
+    padding-bottom: 40px;
+    margin-right: 190px;
+}
+.servicios #pagoLinea img{
+    width: 100px;
+    height: 100px;
+    padding-top: 35px;
+    margin-left: 160px;
+    padding-bottom: 40px;
+    margin-right: 180px;
+}
+.servicios #fugasReportes img{
+    width: 100px;
+    height: 100px;
+    padding-top: 35px;
+    margin-left: 160px;
+    padding-bottom: 40px;
+    margin-right: 180px;
+}
+
+.objetivo{
+    position: static;
+    height: 285px;
+    width: 100%;
+    background: #131c4e;
+}
+
+.tituloObjetivo{
+    padding-top: 80px;
+    font-family: "Montserrat", medium;
+    font-size: 32px;
+    text-align: center;
+    color: white;
+}
+#objetivo{
+    font-family: "Montserrat", Regular;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    padding-top: 25px; 
+    margin-left: 30px; 
+    margin-right: 30px; 
+    text-align: center;
+    
+}
+
+.objetivoDesc{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    position: relative;
+}
+
+footer{
+    width: 100%;
+    height: 500px;
+    background: #131c4e;
+    position: static;
+   /* border: solid 2px white;
+    */
+}
+
+footer .tituloFooter{
+    font-family: "Montserrat";
+    font-size:32px;
+    color: #6cc049;
+    padding-top: 50px;
+    padding: 35px 50px;
+
+}
+
+.infoCapdam{
+    height: 530px;
+    width: 100%;;
+    background: #6cc049;
+    opacity: 0.3;
+    width: 100%;
+    position: relative;
+}

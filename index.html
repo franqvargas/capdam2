@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/dependencies/siema.min.js"></script>
+    <script src="scripts/slider.js"></script>
+</head>
+<body>
+
+    <header>
+        <!--INICIA BARRA DE MENU HEADER-->
+        <div id = 'up-header'>
+            <div id = 'social'>
+                <img src="./images/location.png" alt="">
+                <img src="./images/facebook.png" alt="">
+                <img src="./images/twitter.png"  alt="">
+                <img src="./images/envelope.png" alt="">
+            </div>
+            <div id="linea">
+                Linea directa 073
+            </div>
+            <div id="transparencia">
+                Ley de transparencia &nbsp; 
+                <img src="./images/Iconos/Iconos_inicio/buscador.png" width="17.5px" height="17.5px" alt="">
+            </div>
+        </div>
+
+        <!-- INICIA NAV MENU HEADER-->
+        <div id="menu1">
+            <nav>                
+                <ul id="menu">
+                    <li>
+                        <a href=""><img id="logo" src="./images/logo.png" alt=""></a>
+                    </li>                 
+                    <li>
+                        <a href="#" style="text-decoration: none; color:black;">Tramites y servicios</a>
+                    </li>
+                    <li>
+                        <a href="#" style="text-decoration: none; color:black"> Fugas y Reportes     </a>
+                    </li>
+                    <li>
+                        <a href="#" style="text-decoration: none; color:black"> Cultura del agua     </a>
+                    </li>
+                    <li>
+                        <a href="#" style="text-decoration: none; color:black"> Contacto             </a>
+                    </li>
+                    <li id="pago-en-linea">
+                        <a class="buttonPago" href="#" style="text-decoration: none; color:white">PAGO EN LINEA</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        <!--BANNER SLIDE -->
+        <div id="slider">            
+            <div class="siema">                
+                <div class="slide">
+                    <img src="./images/banner-reportes.png" alt="">
+                    <div class="slide-background"></div>
+                </div>
+                <div class="slide">
+                    <img src="./images/banner-reportes.png" alt="">
+                    <div class="slide-background"></div>
+                </div>
+            </div>
+            <img class="slider-controls" id="back" src="./images/back.png" onclick="slider.back()">
+            <img class="slider-controls" id="next" src="./images/next.png" onclick="slider.next()">
+        </div>
+
+        <!--SECCION DE SERVICIOS -->
+        <div class="servicios">
+            <div id="tramites">
+                <a href="#"><img src="images/Iconos/Iconos_inicio/tramites.png" alt="">       </a>
+                <p class="servicio">TRÁMITES Y SERVICIOS</p>
+            </div>
+            <div id="pagoLinea">
+                <a href=""><img src="images/Iconos/Iconos_inicio/pago-en-linea.png" alt="">   </a>
+                <p class="servicio">PAGO EN LÍNEA       </p>
+            </div>
+            <div id="fugasReportes">
+                <a href=""><img src="images/Iconos/Iconos_inicio/fugas-y-reportes.png" alt=""></a>
+                <p class="servicio">FUGAS Y REPORTES    </p>
+            </div>
+        </div>
+
+        <!-- SECCION DE LA MISION VISION OBJETIVOS CAPDAM -->
+        <div class="objetivo">
+            <div class="tituloObjetivo">
+                <p>Comisión de Agua Potable, Drenaje y Alcantarillado de Manzanillo</p>
+                <div class="objetivoDesc">                
+                    <p id="objetivo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus metus lectus,
+                        sed semper ipsum finibus vel. Donec quis tincidunt massa. Aenean fermentum nisi feugiat nisi placerat,
+                        eget congue lacus tristique.</p>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="infoCapdam">
+        <img src="images/Banner-reportes.png" alt="">
+    </div>
+    <!--PIE DE PAGINA-->
+    <footer>
+        <div class="tituloFooter">
+            <p>Comisión de Agua Potable, Drenaje y Alcantarillado de Manzanillo</p>
+        </div>
+    </footer>
+   <!-- <script src="scripts/menu.js"></script>-->
+</body>
+</html>
