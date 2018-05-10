@@ -53,7 +53,7 @@ header #transparencia{
     font-family: "Montserrat", medium;
     font-size: 16px;
     background-color: white;
-    
+    border-bottom: solid 2px gray;
 }
 nav #menu #logo{
     width: 150px;
@@ -76,12 +76,9 @@ nav #menu{
     height: 72px;
 }
 
-#menu1 {
-    border-bottom: solid 2px gray;
-}
-
 #menu1 a{
     display: block;
+    color: gray;
 }
 
 nav #menu li{
@@ -285,6 +282,7 @@ footer .tituloFooter h1{
 .contenido #tituloReporte2{
     font-family: "Montserrat";
     font-size: 21px;
+    color: gray;
 }
 
 .contenido img{
