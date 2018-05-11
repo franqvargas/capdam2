@@ -247,13 +247,11 @@ footer .tituloFooter h1{
     font-size: 32px;
 }
 
-.infoCapdam{
+#infoCapdam{
     height: 530px;
-    width: 100%;;
-    background: #6cc049;
-    opacity: 0.3;
-    width: 100%;
-    position: relative;
+    background-color: #6cc049;
+    opacity: 0.7;   
+
 }
 
 #info-oficinas{
@@ -342,4 +340,3 @@ ul, menu, dir {
     -webkit-margin-end: 0px;
     -webkit-padding-start: 40px;
 }
-
