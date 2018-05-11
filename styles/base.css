@@ -69,6 +69,10 @@ nav #menu #logo{
     padding-top: 90px;
   }
 
+  .content{
+    position: relative;
+  }
+
 nav #menu{
     display: flex;
     justify-content: space-around;
@@ -270,6 +274,15 @@ footer .tituloFooter h1{
     position: static;
 }
 
+.contenidoCultura{
+    height: 788px;
+    width: 940px;
+    /*border: solid 2px;*/ 
+    margin-left: 189px;
+    /*border: solid 2px black;*/    
+    position: static;
+}
+
 .contenido #tituloGeneral{
     font-family: "Montserrat";
     font-size: 42px;
@@ -339,4 +352,107 @@ ul, menu, dir {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     -webkit-padding-start: 40px;
+}
+
+
+/*Inicio de ciclo del agua*/
+.contenidoCultura{
+    position:   static;
+}
+
+.contenidoCultura #contentVideos{
+    display: flex;
+    flex-direction: column;
+}
+
+#textoCiclo {
+    font-family: "Montserrat";
+    font-size: 42px;
+    color: #82bc00;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#imagenHeader {
+    left: 250px;
+}
+
+#parrafos {
+    left: 250px;
+    font-size: 18px;
+}
+
+#conoceMas{
+    left: 900px;
+    bottom: 180px;
+    font-size: 18px;   
+}
+
+/*Inicio cultura del agua*/
+.contenidoCultura #parrafosCultura {
+    width: 750px;
+    position: static;
+    left: 280px;
+    top: 500px;
+    font-size: 22px;
+    padding-left: 20px;
+    border-left: solid 4px #82bc00;
+}
+
+.contenidoCultura #parrafosCulturaTitulo{
+    font-family: "Montserrat";
+    font-size: 21px;
+    color: #82bc00;
+}
+
+.contenidoCultura #parrafosCultura #parrafosCulturaContenido{
+    font-family: "Montserrat";
+    font-size: 21px;
+    color: gray;
+}
+
+
+.contenidoCultura #conoceMasCultura {
+    position: static;
+    font-size: 18px; 
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    height: 350px;
+}
+
+#videoCultura {
+    float: left;
+}
+/*Inicio donde buscarnos*/
+#direccionDonde {
+    position: absolute;
+    left: 950px;
+    top: 230px;
+    font-size: 18px;
+}
+
+#horarioDonde {
+    position: absolute;
+    left: 950px;
+    bottom: 350px;
+    font-size: 18px;   
+}
+
+#tablaDirectorio {
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: 100px;
+    left: 550px;
+    border: red 5px solid;
+    border-collapse: separate;
+}
+
+#listaVideos{
+    font-family: "Montserrat";
+    font-size: 16px;
+    color: #131c4e;
+    line-height: 44px;
 }
