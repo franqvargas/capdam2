@@ -45,32 +45,50 @@ header #transparencia{
     display: flex;
     height: 100%;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 #menu1{
     overflow: hidden;
-    font-family: "Montserrat", medium;
+    font-family: "Montserrat";
     font-size: 16px;
+    width: 100%;    
     background-color: white;
     border-bottom: solid 2px gray;
+    z-index: 1;
+    transition: all 1s;
+    -moz-transition: all 1s; /* Firefox 4 */
+    -webkit-transition: all 1s; /* Safari and Chrome */
+    -o-transition: all 1s; /* Opera */
 }
-nav #menu #logo{
+
+nav .menu #logo{
     width: 150px;
+    transition: all 1s;
+    -moz-transition: all 1s; /* Firefox 4 */
+    -webkit-transition: all 1s; /* Safari and Chrome */
+    -o-transition: all 1s; /* Opera */
 }
 
 .sticky{
-    position: fixed;
-    top: 0;
+    top: 0px;
     width: 100%;
+    font-size: 11px;
+    height: 54px;
+    overflow: hidden;
+    font-family: "Montserrat";
+    background-color: white;
+    border-bottom: solid 2px gray;
+    z-index: 1;
+    position: fixed;
+    display: block;
+    
 }
 
-.sticky + .content {
-    padding-top: 90px;
-  }
 
-  .content{
-    position: relative;
+/*
+nav #menu #logo{
+    width: 150px;
   }
 
 nav #menu{
@@ -80,26 +98,36 @@ nav #menu{
     height: 72px;
 }
 
-#menu1 a{
-    display: block;
-    color: gray;
-}
-
 nav #menu li{
     list-style: none;
 }
 
-li{
-    list-style: none;
-}
-
-nav #menu li#pago-en-linea{
+*/
+nav .menu li#pago-en-linea{
     background: #6cc049;
     display: flex;
     height: 100%;
     align-items: center;
     padding: 0 15px;
-    font-size: 16px;
+}
+
+nav .menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 72px;
+}
+
+#menu1 a{
+    color: gray;
+}
+
+nav .menu li{
+    list-style: none;
+}
+
+li{
+    list-style: none;
 }
 
 #informacion-horarios{
@@ -207,6 +235,7 @@ nav #menu li#pago-en-linea{
     text-align: center;
     color: white;
 }
+
 #objetivo{
     font-family: "Montserrat", Regular;
     font-size: 18px;
@@ -307,7 +336,6 @@ footer .tituloFooter h1{
 }
 
 #tituloReportes{
-    padding-top: 0px;
     border-left: solid 4px;
     border-color: #82bc00;
     padding-left: 15px;
@@ -343,17 +371,6 @@ footer .tituloFooter h1{
     display: inline-block;
     padding: .5rem;
 }
-
-ul, menu, dir {
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
-}
-
 
 /*Inicio de ciclo del agua*/
 .contenidoCultura{
@@ -412,7 +429,6 @@ ul, menu, dir {
     color: gray;
 }
 
-
 .contenidoCultura #conoceMasCultura {
     position: static;
     font-size: 18px; 
@@ -456,3 +472,241 @@ ul, menu, dir {
     color: #131c4e;
     line-height: 44px;
 }
+/* PRIMERA FILA DEL MENU DE TRAMIETES Y SERVICIOS*/
+/*ANIMATION*/
+.menuTramitesPrincipal img {
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.menuTramitesPrincipal img:hover {
+    opacity: .5;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); 
+} /*ANIMATION END */
+
+.menuTramitesPrincipal{
+    font-family: "Montserrat";
+    color: white;
+    font-size: 9px;
+    text-align: center;
+    display: flex;  
+    padding-left: 145px; 
+}
+.menuTramitesPrincipal .menuTramites2{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#imgServicio{
+    width: 110px;
+    height: 110px; 
+    display: inline-block;
+}
+#textServicio{
+    height: 248px; 
+    width: 318px; 
+    background-color: #458452;
+    font-size:2em;
+    text-align: center;
+    display: inline-block;
+}
+#imgZonaUrbana{
+    width: 110px;
+    height: 110px; 
+    display: inline-block;
+}
+#textZonaUrbana{
+    height: 248px;
+    width: 318px;
+    background-color: #6cc049;
+    font-size:2em;
+    text-align: center;
+    display: inline-block;
+}
+#imgCambioNombre{
+    width: 110px;
+    height: 110px; 
+    display: inline-block;
+}
+#CambioNombre{
+    height: 248px;
+    width: 318px;
+    background-color: #3fbfad;
+    font-size:2em;
+    text-align: center;
+    display: inline-block;
+}
+
+/* SEGUNDA FILA DEL MENU DE TRAMIETES Y SERVICIOS*/
+/*ANIMATION*/
+.menuTramitesPrincipal2 img {
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.menuTramitesPrincipal2 img:hover {
+    opacity: .5;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); 
+} /*ANIMATION END */
+.menuTramitesPrincipal2{
+    
+    font-family: "Montserrat";
+    color: white;
+    font-size: 9px;
+    text-align: center;
+    display: flex;  
+    margin-left: 145px;
+}
+.menuTramitesPrincipal2 .menuTramites3{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#imgActivacion{
+    width: 110px;
+    height: 110px; 
+    display: inline-block;
+}
+#textActivacion{
+    height: 248px; 
+    width: 318px; 
+    background-color: #67a54e;
+    font-size:2em;
+    text-align: center;
+    display: inline-block;
+}
+#imgInactivacion{
+    width: 110px;
+    height: 110px; 
+    display: inline-block;
+}
+#textInactivacion{
+    height: 248px; 
+    width: 318px;
+    background-color: #82bc00;
+    font-size:2em;
+    text-align: center;
+    display: inline-block;
+    
+}
+#imgBajaContratos{
+    width: 110px;
+    height: 110px; 
+    display: inline-block;
+}
+#BajaContratos{
+    height: 248px; 
+    width: 318px; 
+    background-color: #99bd73;
+    font-size:2em;   
+    display: inline-block;
+}
+/* TERCERA FILA DEL MENU DE TRAMIETES Y SERVICIOS*/
+/*ANIMATION*/
+.menuTramitesPrincipal3 img {
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.menuTramitesPrincipal3 img:hover {
+    opacity: .5;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); 
+} /*ANIMATION END */
+.menuTramitesPrincipal3{
+    font-family: "Montserrat";
+    color: white;
+    font-size: 9px;
+    text-align: center;
+    display: flex;  
+    margin-left: 145px;
+}
+.menuTramitesPrincipal3 .menuTramites4{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#imgInstalacion{
+    width: 110px;
+    height: 110px; 
+    display: inline-block;
+}
+#textInstalacion{
+    height: 248px; 
+    width: 318px;  
+    background-color: #94c249;
+    font-size:2em;
+    text-align: center;  
+    display: inline-block;
+}
+#imgPresupuesto{
+    width: 110px;
+    height: 110px; 
+    display: inline-block;
+}
+#textPresupuesto{
+    height: 248px; 
+    width: 318px;  
+    background-color: #75ad74;
+    font-size:2em;
+    text-align: center;
+    display: inline-block;
+}
+#imgDatosFiscales{
+    width: 110px;
+    height: 110px; 
+    display: inline-block;
+}
+#DatosFiscales{
+    height: 248px; 
+    width: 318px;
+    background-color: #009045;
+    font-size:2em;
+    text-align: center;
+    display: inline-block;
+}
+.text1{
+    font-family: "Montserrat";
+    font-size:20px;
+    padding-left: 145px;
+}
+#lect1{
+   font-family: "Montserrat";
+   font-size: 25px;
+   color: #82bc00;
+}
+.text2{
+    font-family: "Montserrat";
+    padding-left: 145px;
+}
+
+#lectura1{
+    border-left: solid 4px;
+    border-color: #82bc00;
+    padding-left: 5px;
+    
+}       
+#sliderTramites{
+    padding-left: 145px;
+    padding-right: 50px;
+    width: 940px;
+    height: 280px;
+}
+/*FIN DE TRAMITES Y SERVICIOS*/
