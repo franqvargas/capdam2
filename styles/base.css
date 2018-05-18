@@ -127,7 +127,21 @@ nav .menu li{
 }
 
 li{
+    /*list-style: none;*/
+}
+
+#listaVideos li{
     list-style: none;
+}
+#listaMandamientos li{
+    list-style: upper-roman; 
+}
+
+
+#listaMandamientos{
+    padding-left: 20px;
+    height: 1450px;
+    position: flex;
 }
 
 #informacion-horarios{
@@ -269,6 +283,9 @@ footer{
     /* align-items: center; */
     justify-content: space-evenly;
 }
+footer li{
+    list-style: none;
+}
 
 footer .tituloFooter{
     font-family: "Montserrat";
@@ -278,13 +295,6 @@ footer .tituloFooter{
 
 footer .tituloFooter h1{
     font-size: 32px;
-}
-
-#infoCapdam{
-    height: 530px;
-    background-color: #6cc049;
-    opacity: 0.7;   
-
 }
 
 #info-oficinas{
@@ -387,7 +397,6 @@ footer .tituloFooter h1{
     font-size: 42px;
     color: #82bc00;
     text-align: left;
-    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -417,16 +426,31 @@ footer .tituloFooter h1{
     border-left: solid 4px #82bc00;
 }
 
-.contenidoCultura #parrafosCulturaTitulo{
+#parrafosCulturaTitulo{
     font-family: "Montserrat";
     font-size: 21px;
     color: #82bc00;
+    position: initial;
 }
 
 .contenidoCultura #parrafosCultura #parrafosCulturaContenido{
     font-family: "Montserrat";
     font-size: 21px;
     color: gray;
+}
+#conoceMasCultura a{
+    text-decoration: none;
+    color: #131c4e;
+}
+#conoceMasCultura a:active{
+    color: #82bc00;
+}
+#conoceMasCultura a:hover{
+    color: #82bc00;
+}
+
+#conoceMasCulturaActivado a{
+    color: #82bc00;
 }
 
 .contenidoCultura #conoceMasCultura {
@@ -441,6 +465,63 @@ footer .tituloFooter h1{
 #videoCultura {
     float: left;
 }
+
+/*Ciclo del Agua*/
+.contenidoCiclo{
+    height: 1450px;
+    font-size: 22px;
+    padding-left: 10px;
+    width: 940px;
+    margin-left: 180px;
+}
+
+.contenidoCiclo #parrafosCiclo #parrafosCulturaContenido{
+    border-left: solid 4px #82bc00;
+    padding-left: 20px;
+    font-family: "Montserrat";
+    font-size: 21px;
+    position: static;
+    text-align: justify;
+}
+.contenidoCiclo #parrafosCiclo #parrafosCulturaContenido p{
+    margin-top: 15px;
+}
+.contenidoCiclo #conoceMasCultura{
+    width: 30%;
+    float: right;
+}
+
+.contenidoCiclo #parrafosCulturaContenido{
+    width: 60%;
+    float: left;
+}
+
+.contenidoCiclo #bannerCicloImg img{
+    padding-bottom: 80px;
+    position: flex;
+}
+
+#regresoCultura a{
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: #131c4e;
+    text-decoration: none;
+}
+
+#regresoCultura {
+    padding-top: 25px;
+    text-decoration: none;
+}
+
+/*inicio contaminacion*/
+.contenidoContaminacion{
+    height: 1000px;
+    font-size: 22px;
+    padding-left: 20px;
+    width: 940px;
+    margin-left: 200px;
+}
+
 /*Inicio donde buscarnos*/
 #direccionDonde {
     position: absolute;
@@ -613,6 +694,11 @@ footer .tituloFooter h1{
     font-size:2em;   
     display: inline-block;
 }
+
+.contenido2{
+    position: relative;
+    padding-left: 40px;
+}
 /* TERCERA FILA DEL MENU DE TRAMIETES Y SERVICIOS*/
 /*ANIMATION*/
 .menuTramitesPrincipal3 img {
@@ -684,12 +770,15 @@ footer .tituloFooter h1{
 }
 .text1{
     font-family: "Montserrat";
-    font-size:20px;
+    font-size:42px;
+    color: #82bc00;
     padding-left: 145px;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 #lect1{
-   font-family: "Montserrat";
-   font-size: 25px;
+    font-family: "Montserrat";
+    font-size: 25px;
    color: #82bc00;
 }
 .text2{
@@ -710,3 +799,74 @@ footer .tituloFooter h1{
     height: 280px;
 }
 /*FIN DE TRAMITES Y SERVICIOS*/
+
+/*Inicio donde quejas y sugerencias*/
+#parrafoQuejas {
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    font-size: 18px;
+}
+
+#formularioQuejas {
+    position: absolute;
+    top: 280px;
+    left: 600px;
+    font-size: 20px;
+}  
+
+i {
+    color: #3484BD;
+}  
+
+#botonQuejas {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#botonQuejas {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.infoCapdam{
+    opacity: .2;
+    background-color:rgb(255,0,0);
+    height: 530px;
+    width:100%; 
+    position: absolute;
+    top: 0px;
+}
+#contenidoInfocapdam{
+    height: 530px;
+    width:100%;
+    position: relative;
+    color: #000000;
+}
+/*
+#contenidoInfocapdamTitulo{
+    font-family: "Montserrat";
+    font-size: 32px;
+    color: white;
+    float: right;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+#contenidoInfocapdamDescripcion{
+    font-family: "Montserrat";
+    font-family: 18px;
+    color: white;
+    float: right;
+    padding-right: 20px;
+    padding-left: 650px;
+    text-align: right;
+}*/
