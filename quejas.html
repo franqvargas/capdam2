@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio</title>
+    <script src="scripts/dependencies/siema.min.js"></script>
+    <script src="scripts/slider.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/quejas.css">
+</head>
+<body>
+    <header>    
+        <!--INICIA BARRA DE MENU HEADER-->
+        <div id = 'up-header'>
+            <div id = 'social'>
+                <img src="./images/location.png" alt="">
+                <img src="./images/facebook.png" alt="">
+                <img src="./images/twitter.png"  alt="">
+                <img src="./images/envelope.png" alt="">
+            </div>
+            <div id="linea">
+                Linea directa 073
+            </div>
+            <div id="transparencia">
+                Ley de transparencia &nbsp; 
+                <img src="./images/Iconos/Iconos_inicio/buscador.png" width="17.5px" height="17.5px" alt="">
+            </div>
+        </div>
+
+        <div id="espacioScroll"></div>
+        <div id="menu1">
+            <nav id="cambios">                
+                <ul class="menu">
+                    <li>
+                        <a href="index.html"><img id="logo" src="./images/logo.png" alt=""></a>
+                    </li>                 
+                    <li>
+                        <a href="Tramites-y-Servicio.html" style="text-decoration: none;">Tramites y servicios</a>
+                    </li>
+                    <li>
+                        <a href="fugasReportes.html" style="text-decoration: none;">Fugas y Reportes     </a>
+                    </li>
+                    <li>
+                        <a href="Cultura-del-Agua.html" style="text-decoration: none;">Cultura del agua     </a>
+                    </li>
+                    <li>
+                        <a href="quejas.html" style="text-decoration: none;">Contacto             </a>
+                    </li>
+                    <li id="pago-en-linea">
+                        <a class="buttonPago" href="Pago-en-Linea.html" style="text-decoration: none; color:white">PAGO EN LINEA</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>  
+    </header>
+    
+    <div class="content">
+        <div class="contenidoQuejas">
+            <div id="parrafosQuejas">
+                <div id="titulo">
+                    <p>
+                        Quejas y Suegerencias.
+                    </p>
+                </div>
+                <div id="parrafoQuejas">
+                    <p>En Capdam se trabaja para cumplirte por eso si tienes alguna queja o sugerencia acerca 
+                        de tu servicio de agua potable no dudes en comunicarte con nosotros.</p>
+                    </div>
+                </div>
+            <div id="formularioQuejas">
+                <form>
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px">
+                            <i class="w3-xxlarge fa fa-user"></i>
+                        </div>
+                        <div class="w3-rest">
+                            <input class="w3-input w3-border" maxlength="50" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}"  title="No puedes poner numeros" onkeypress="return valida(event)" name="first" type="text" placeholder="Nombre Completo">
+                        </div>
+                    </div>
+                    
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px">
+                            <i class="w3-xxlarge fa fa-globe"></i>
+                        </div>
+                        <div class="w3-rest">
+                            <input class="w3-input w3-border" maxlength="30" name="last" type="text" placeholder="Localidad">
+                        </div>
+                    </div>
+                    
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px">
+                            <i class="w3-xxlarge fa fa-pencil-square-o"></i>
+                        </div>
+                        <div class="w3-rest">
+                            <input class="w3-input w3-border" maxlength="30" name="email" type="text" placeholder="Asunto">
+                        </div>
+                    </div>
+                    
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px">
+                            <i class="w3-xxlarge fa fa-phone"></i>
+                        </div>
+                        <div class="w3-rest">
+                            <input class="w3-input w3-border" maxlength="11" name="phone" type="tel" placeholder="Telefono">
+                        </div>
+                    </div>
+                    
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px">
+                            <i class="w3-xxlarge fa fa-envelope-o"></i>
+                        </div>
+                        <div class="w3-rest">
+                            <input class="w3-input w3-border" maxlength="60" name="message" type="email" placeholder="Correo">
+                        </div>
+                    </div>
+                    
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px">
+                            <i class="w3-xxlarge fa fa-comment"></i>
+                        </div>
+                        <div class="w3-rest">
+                            <textarea id="textoQuejas" class="w3-input w3-border" maxlength="250" name="message" type="textarea" rows="4" cols="50" placeholder="Escribe un mensaje"> </textarea>
+                        </div>
+                    </div>                    
+                    <input type="submit" id="botonQuejas" value="Enviar">
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="tituloFooter">
+            <h1>Comisión de Agua Potable, 
+                Drenaje y Alcantarillado de Manzanillo</h1>
+        </div>
+
+        <div id="informacion-horarios">
+            <ul id= 'info-oficinas'>
+                <li>
+                    <hgroup>
+                        <h1>Oficinas Centrales</h1>
+                    </hgroup>
+                </li>
+                <li>Blvd. Miguel de la madrid No. 12575</li>
+                <li>Peninsula de Santiago, C.P. 28867, Manzanillo, Colima</li>
+            </ul>
+            <ul>
+                <li>
+                    <hgroup>
+                        <h1>Horario de atencion</h1>
+                    </hgroup>
+                </li>
+                <li>Lunes a Viernes de 8:30 AM a 4:00 PM</li>
+            </ul>
+        </div>
+
+        <div id='informacion-contacto'>
+            <span>Linea Directa</span>
+            <a href="">
+                <img src="./images/location.png" alt="">
+            </a>
+            <a href="">
+                <img src="./images/facebook.png" alt="">
+            </a>
+            <a href="">
+                <img src="./images/twitter.png" alt="">
+            </a>
+            <a href="">
+                <img src="./images/envelope.png" alt="">
+            </a>
+            Ley de transparencia
+        </div>
+
+        <div id= 'informacion-tramites'>
+            <ul>
+                <li>Tramites y sevicios</li>
+                <li>Fugas y reportes</li>
+                <li>Cultura del agua</li>
+                <li>Contacto</li>
+                <li>Pago en linea</li>
+            </ul>      
+        </div>
+        
+        <div id='copyright' style="text-align: center; font-family: 'Montserrat'; font-size: 12px;">
+            © 2017 Comision de Agua Potable, Drenaje y alcantarillado. Derechos Reservados
+        </div>
+    </footer>
+    <script>
+            window.onscroll = function() {myFunction2()};
+            var menu1 = document.getElementById("menu1");
+            var espacioScroll = document.getElementById("espacioScroll");
+            var sticky = menu1.offsetTop;
+            
+            function myFunction2() {
+              if (window.pageYOffset >= sticky) {
+                menu1.style.fontSize="14px";
+                menu1.style.height="32px"; 
+                menu1.style.paddingBottom="30px";
+                espacioScroll.style.paddingTop=("50px");
+                espacioScroll.style.paddingBottom=("15px")
+                menu1.classList.add("sticky");    
+              } else {
+                espacioScroll.style.paddingTop=("0px");
+                espacioScroll.style.paddingBottom=("0px");
+                menu1.classList.remove("sticky");
+                menu1.style.fontSize="16px";
+                menu1.style.height="72px";
+                menu1.style.paddingBottom="0px";
+              }
+            }
+            
+    </script>
+
+</body>
+</html>

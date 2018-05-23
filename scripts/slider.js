@@ -6,8 +6,6 @@ var slider = (function (Siema) {
         
         this.siema = new Siema();
         
-        
-        
     }
 
     slider.next = function () {

@@ -126,9 +126,15 @@ nav .menu li{
     list-style: none;
 }
 
-li{
-    /*list-style: none;*/
+
+#menu1 a:hover{
+    color: #44832a;
 }
+
+#menu1 li ul li{
+    display: none;
+}
+
 
 #listaVideos li{
     list-style: none;
@@ -297,12 +303,75 @@ footer .tituloFooter h1{
     font-size: 32px;
 }
 
+#informacion-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: "Montserrat";
+    font-size: 12px;
+}
+
+#informacion-contacto a:hoover{
+    text-decoration: none;
+}
+
+#informacion-contacto > *{
+    margin:.5rem;
+}
+
+#informacion-tramites{
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 16px;
+}
+
+#informacion-tramites ul li{
+    display: inline-block;
+    padding: .5rem;
+}
 #info-oficinas{
     margin-right: 4rem;
 }
 
 .socialContent{
-    height: 813px;    
+    height: 813px; 
+    width: 93%;
+    position: static; 
+    display: flex;
+    padding-left: 7%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: right;
+    
+}
+
+.socialContent #events{
+    text-align: center;
+    width: 25%;
+    font-size: 28px;
+    text-align: left;
+}
+#eventsText{
+    border-bottom: solid 4px rgba(128, 128, 128, 0.26);
+
+    padding-top: 85px;
+    margin-left: 15px;
+    margin-right: 1 5px;
+    padding-bottom: 11px;
+    color: grey;
+    font-weight: lighter;
+    display: flex;
+}
+.socialContent #blog{
+    text-align: center;
+    width: 35%;
+    text-align: left;
+    font-size: 28px;
+}
+.socialContent #social  {
+    text-align: center;
+    width: 30%;
+    text-align: left;
+    font-size: 28px;
 }
 
 .contenido{
@@ -311,6 +380,7 @@ footer .tituloFooter h1{
     /*border: solid 2px;*/ 
     margin-left: 189px;
     position: static;
+    
 }
 
 .contenidoCultura{
@@ -355,32 +425,6 @@ footer .tituloFooter h1{
     padding-top: 25px;
 }
 
-#informacion-contacto{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-family: "Montserrat";
-    font-size: 12px;
-}
-
-#informacion-contacto a:hoover{
-    text-decoration: none;
-}
-
-#informacion-contacto > *{
-    margin:.5rem;
-}
-
-#informacion-tramites{
-    text-align: center;
-    font-family: "Montserrat";
-    font-size: 16px;
-}
-
-#informacion-tramites ul li{
-    display: inline-block;
-    padding: .5rem;
-}
 
 /*Inicio de ciclo del agua*/
 .contenidoCultura{
@@ -837,18 +881,100 @@ i {
 }
 
 .infoCapdam{
-    opacity: .2;
-    background-color:rgb(255,0,0);
-    height: 530px;
+    opacity: .7;
+    background-color:#b5dd05;
+    height: 470px;
     width:100%; 
     position: absolute;
+    color:white;
     top: 0px;
+    font-weight: bold;
+    font-size: 46px;
+    padding-bottom: 20px;
+    padding-top: 40px;
 }
 #contenidoInfocapdam{
-    height: 530px;
     width:100%;
     position: relative;
-    color: #000000;
+    font-size:46px;
+    font-family: "Montserrat";
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    top: 0px;
+}
+
+.parrafosInfo{
+    float: right;
+    padding-top: 5px;
+    text-align: right;
+    text-justify: auto;
+    padding-right: 25px;
+}
+.parrafosInfo2{
+    padding-top: 90px;
+    font-size: 32px;
+    float: right;
+    padding-left: 750px;
+    padding-right: 25px;
+    text-align: right;
+    justify-content: right;
+    
+}
+
+#imagenInfocapdam{
+    background-image: url(../images/aguaSirviendo.jpg);
+    height: 530px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+}
+
+.socialContent #verMas{
+    font-family: 'Montserrat'; 
+    font-size: 14px; 
+    margin-top: 10px; 
+    margin-left: 5px;  
+}
+
+#eventsText #verMas a{
+    text-decoration: none;
+    font-weight: bold;
+    color: red;
+}
+#eventsText a:hover{
+    text-decoration: none;
+}
+.circulo {
+    width: 350px;
+    height: 350px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: transparent;
+    border: solid .3em white;
+    margin-top: 80px;
+    margin-left: 140px;
+    align-items: center;
+}
+
+.circulo #textoCirculo{
+    font-family: "Montserrat";
+    color: white;
+    position: relative; 
+    text-align: center;
+}
+
+.circulo #cantidad{
+    font-size: 68px;
+    line-height: 45px;
+    padding-bottom: 30px;
+}
+.circulo #descripcion{
+    font-size: 30px;
+    font-style: italic;
+
 }
 /*
 #contenidoInfocapdamTitulo{
@@ -870,3 +996,6 @@ i {
     padding-left: 650px;
     text-align: right;
 }*/
+
+/* CONTACTOS*/
+/*Inicio donde quejas y sugerencias*/

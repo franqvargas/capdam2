@@ -8,9 +8,27 @@
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/dependencies/siema.min.js"></script>
     <script src="scripts/slider.js"></script>
+	<script src="scripts/circulo.js"></script>
 </head>
 <body>
-
+	<!-- 		
+		<div class="contenidooo">        
+			<div id="header">
+				<ul class="nav">
+					<li><a href="">Tramites y Servicios</a></li>
+					<li><a href="">Fugas y Reportes</a></li>
+					<li><a href="">Cultura del Agua</a></li>
+					<li><a href="">Contacto</a>
+						<ul>
+							<li><a href="">Donde pagar</a></li>
+							<li><a href="">Quejaas y sugerencias</a></li>
+							<li><a href="">Directorio telefónico</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	-->
     <header>
         <!--INICIA BARRA DE MENU HEADER-->
         <div id = 'up-header'>
@@ -32,7 +50,7 @@
         <!-- INICIA NAV MENU HEADER-->
     <div id="espacioScroll"></div>
         <div id="menu1">
-            <nav id="cambios">                
+			<nav class="cambios">                
                     <ul class="menu">
                             <li>
                                 <a href="index.html"><img id="logo" src="./images/logo.png" alt=""></a>
@@ -47,14 +65,20 @@
                                 <a href="Cultura-del-Agua.html" style="text-decoration: none;"> Cultura del agua     </a>
                             </li>
                             <li>
-                                <a href="Contactos.html" style="text-decoration: none;"> Contacto             </a>
+						<a href="quejas.html" style="text-decoration: none;"> Contacto             </a>
+						<ul id="subMenu" class="Contactos">
+							<li>Dondé pagar</li>
+							<li>Directorio telefónico</li>
+							<li>Quejas y sugerencias</li>
+						</ul>
                             </li>
                             <li id="pago-en-linea">
-                                    <a class="buttonPago" href="Pago-en-Linea.html" style="text-decoration: none; color:white">PAGO EN LINEA</a>                            </li>
+						<a class="buttonPago" href="Pago-en-Linea.html" style="text-decoration: none; color:white">PAGO EN LINEA</a>                            
+					</li>
                         </ul>
-            </nav>
         </div>
     </header>
+		
     <div class="content">
         <!--BANNER SLIDE -->
         <div id="slider">            
@@ -101,18 +125,80 @@
         </div>
     </div>
 
+			<div id="imagenInfocapdam">
+				<!-- 
+				-->
+				<div class="circulo" style="display: flex; position: absolute; z-index: 1;">
+					<div id="textoCirculo">
+						<p id="cantidad">
+							80
+						</p>
+						<span id="descripcion">
+							Reportes y Fugas atendidas
+						</span>        
+					</div>
+				</div> 
     <div id="contenidoInfocapdam">
+					<p class="parrafosInfo">
         Donde se trabaja para cumplirte
+					</p>
+					<p class="parrafosInfo2">
         En Capdam trabajamos día con día, atendiendo a tus necesidades de manera oportuna y realizando obras que mejoren nuestro servicio
                 de agua potable.              
+					</p>
                 <div class="infoCapdam">
-                        Donde se trabaja para cumplirte
+						<p class="parrafosInfo">
+							Donde se trabaja para cumplirte</p>
+							
+							<p class="parrafosInfo2">
                         En Capdam trabajamos día con día, atendiendo a tus necesidades de manera oportuna y realizando obras que mejoren nuestro servicio
                                 de agua potable.          
+							</p>
+						</div>
                 </div>
         </div>
 
     <div class="socialContent">
+					<div id="events">
+						<div id="eventsText">
+							<div>
+								<span>
+									AVISOS&nbsp;                   
+								</span>
+								<span id="verMas" >
+									<img src="./images/Iconos/Iconos_inicio/trianNar.png" width="8px" height="8px" alt=""> 
+									<a href="#">
+										Ver más
+									</a>
+								</span>
+								
+							</div>
+						</div>
+					</div>
+					<div id="blog" >
+						<div id="eventsText">
+							<div>
+								<span>
+									NOTICIAS&nbsp;                   
+								</span>
+								<span id="verMas" >
+									<img src="./images/Iconos/Iconos_inicio/trianNar.png" width="8px" height="8px" alt=""> 
+									<a href="#">
+										Ver más
+									</a>
+								</span>
+								
+							</div>
+							
+						</div>
+					</div>
+					<div id="social">
+						<div id="eventsText">
+							REDES SOCIALES
+							
+						</div>
+					</div>
+					
         
     </div>
     <!--PIE DE PAGINA-->
